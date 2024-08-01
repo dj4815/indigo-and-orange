@@ -1,12 +1,12 @@
 import React from "react";
-import Heading1 from "./Heading1";
+import Heading1 from "./Heading1Dark";
 import Heading2 from "./Heading2";
 import SmallHeading from "./SmallHeading";
-import Paragraph from "./Paragraph";
+import Paragraph from "./ParagraphDark";
 import ButtonMain from "./ButtonMain";
 import ButtonSecondary from "./ButtonSecondary";
 import ButtonOther from "./ButtonOther";
-import Link from "./Link";
+import Link from "./LinkDark";
 import HomeHeroImage from "./HomeHeroImage";
 
 export default function HomeHeader() {
@@ -53,8 +53,8 @@ export default function HomeHeader() {
 
   return (
     <>
-      <div className="flex xl:flex-row flex-col gap-x-8 2xl:px-64 pb-16 object-fill">
-        <div className="flex flex-col flex-1 items-left justify-center p-4 pb-48 lg:p-8 xl:p-16 order-2 xl:order-1 bg-indigo-500 rounded-bl-[200px]">
+      <div className="flex xl:flex-row flex-col gap-x-8 xl:px-48 pb-16 order-1 xl:order-2">
+        <div className="flex flex-col flex-1 items-left justify-center p-4 lg:p-8 bg-orange-300 rounded-tr-[200px]">
           <SmallHeading text="React and Tailwind" />
           <Heading1 text="Indigo and Orange" />
 
@@ -63,13 +63,12 @@ export default function HomeHeader() {
           <Paragraph children={text2} />
 
           <Paragraph children={text3} />
-          <div className="flex flex-col lg:flex-row gap-4">
+          <div className="flex flex-col lg:flex-row items-left gap-4 pb-16">
             <ButtonMain text={buttonMainText} />
             <ButtonSecondary text={buttonSecondaryText} />
             {/* <ButtonOther text={buttonOtherText} /> */}
           </div>
         </div>
-
         <HomeHeroImage />
       </div>
     </>
