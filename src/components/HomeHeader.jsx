@@ -53,13 +53,12 @@ export default function HomeHeader() {
 
   return (
     <>
-      <div className="flex xl:flex-row flex-col gap-x-8 pb-16">
-        <div className="flex flex-col flex-1 xl:flex-[2] items-left justify-center p-4 pb-32 lg:pb-32 lg:p-8 xl:p-16 order-2 xl:order-1 bg-indigo-500 rounded-bl-[200px]">
+      <div className="flex xl:flex-row flex-col gap-x-8 pb-16 lg:m-8 2xl:mt-8 2xl:mb-8 2xl:ml-64 2xl:mr-64">
+        <div className="flex flex-col flex-1 xl:flex-[2] p-4 pb-32 lg:pb-32 lg:p-8 xl:p-16 order-2 xl:order-1 bg-indigo-500 rounded-bl-[200px]">
           <SmallHeading text="React and Tailwind" />
           <Heading1 text="Indigo and Orange" />
           <Paragraph children={text1} />
           <Paragraph children={text2} />
-          <Paragraph children={text3} />
           <div className="flex flex-col lg:flex-row gap-4">
             <ButtonMain text={buttonMainText} />
             <ButtonSecondary text={buttonSecondaryText} />

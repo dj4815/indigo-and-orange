@@ -53,7 +53,7 @@ export default function HomeHeader() {
 
   return (
     <>
-      <div className="flex xl:flex-row flex-col gap-x-8 pb-16">
+      <div className="flex xl:flex-row flex-col gap-x-8 pb-16 2xl:mt-8 2xl:mb-8 2xl:ml-64 2xl:mr-64">
         <div className="flex flex-col flex-1 xl:flex-[2] items-left justify-center p-4 lg:p-8 xl:p-32 bg-orange-200 rounded-tr-[200px] order-2 xl:order-1">
  
           <SmallHeading text="React and Tailwind" />
