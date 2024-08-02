@@ -53,23 +53,21 @@ export default function HomeHeader() {
 
   return (
     <>
-      <div className="flex xl:flex-row flex-col gap-x-8 xl:px-48 pb-16 order-1 xl:order-2">
-        <div className="flex flex-col flex-1 items-left justify-center p-4 lg:p-8 bg-orange-300 rounded-tr-[200px]">
+      <div className="flex xl:flex-row flex-col gap-x-8 pb-16 px-8">
+        <div className="flex flex-col flex-1 xl:flex-[2] items-left justify-center p-4 lg:p-8 bg-orange-300 rounded-tr-[200px] order-2 xl:order-1">
           <SmallHeading text="React and Tailwind" />
           <Heading1 text="Indigo and Orange" />
-
           <Paragraph children={text1} />
-
           <Paragraph children={text2} />
-
           <Paragraph children={text3} />
           <div className="flex flex-col lg:flex-row items-left gap-4 pb-16">
             <ButtonMain text={buttonMainText} />
             <ButtonSecondary text={buttonSecondaryText} />
-            {/* <ButtonOther text={buttonOtherText} /> */}
           </div>
         </div>
-        <HomeHeroImage />
+        <div className="flex-1 xl:flex-[3] order-1 xl:order-2">
+          <HomeHeroImage />
+        </div>
       </div>
     </>
   );
