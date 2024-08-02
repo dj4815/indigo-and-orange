@@ -1,7 +1,7 @@
 import React from "react";
 import Heading1 from "./Heading1Dark";
 import Heading2 from "./Heading2";
-import SmallHeading from "./SmallHeading";
+import SmallHeading from "./SmallHeadingDark";
 import Paragraph from "./ParagraphDark";
 import ButtonMain from "./ButtonMain";
 import ButtonSecondary from "./ButtonSecondary";
@@ -53,7 +53,7 @@ export default function HomeHeader() {
 
   return (
     <>
-      <div className="flex xl:flex-row flex-col gap-x-8 pb-16 px-8">
+      <div className="flex xl:flex-row flex-col gap-x-8 pb-16">
         <div className="flex flex-col flex-1 xl:flex-[2] items-left justify-center p-4 lg:p-8 bg-orange-300 rounded-tr-[200px] order-2 xl:order-1">
           <SmallHeading text="React and Tailwind" />
           <Heading1 text="Indigo and Orange" />
